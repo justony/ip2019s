@@ -32,6 +32,10 @@ function analyze() {
       subs = remain.slice(m, n+1); // z 也要包含
       console.log('subs = ' + subs);
 
+      var subs2 = subs.replace('237','437');
+      var subs2 = subs2.replace('462','262');
+
+      var path = image.path(subs).fill('none').stroke({color:'red',width:'3px'}).draggable();
       remain = remain.slice(n+1); // z 也要移除
       //console.log('remain = ' + remain);
 
